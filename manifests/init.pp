@@ -1,9 +1,9 @@
 class cyrus (
   $cyrus_tls_config,
-  $managed_mail_domains         = hiera('managed_mail_domains'),
-  $authentication_ldap_servers  = hiera('authentication_ldap_servers', false),
-  $ldap_bind_dn                 = hiera('ldap_bind_dn', false),
-  $ldap_bind_pw                 = hiera('ldap_bind_pw', false)
+  $managed_mail_domains,
+  $authentication_ldap_servers  = false,
+  $ldap_bind_dn                 = false,
+  $ldap_bind_pw                 = false
   ) {
   include cyrus::variables
 
