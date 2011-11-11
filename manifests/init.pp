@@ -1,6 +1,7 @@
 class cyrus (
   $cyrus_tls_config,
   $managed_mail_domains,
+  $altnamespace                 = false,
   $authentication_ldap_servers  = false,
   $ldap_bind_dn                 = false,
   $ldap_bind_pw                 = false
