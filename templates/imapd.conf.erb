@@ -18,7 +18,7 @@ newsspool: /var/spool/news
 # /usr/share/doc/cyrus-doc-2.2/html/altnamespace.html, where an user's
 # subfolders are in the same level as the INBOX
 # See also userprefix and sharedprefix on imapd.conf(5)
-altnamespace: <% if altnamespace then %> no <% else %> yes <% end %>
+altnamespace:<% if altnamespace then %> no <% else %> yes <% end %>
 
 # UNIX Hierarchy Convention
 # Set to yes, and cyrus will accept dots in names, and use the forward
