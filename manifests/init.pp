@@ -6,6 +6,7 @@ class cyrus (
   $ldap_bind_dn                 = false,
   $ldap_bind_pw                 = false,
   $cyrus_spool_path             = false,
+  $cyrus_sieve_bind             = 'localhost:sieve',
 ) {
 
   Class ['sasl'] -> Class ['cyrus']
@@ -24,6 +25,6 @@ class cyrus (
     authentication_ldap_servers => $cyrus::authentication_ldap_servers,
     ldap_bind_dn                => $cyrus::ldap_bind_dn,
     ldap_bind_pw                => $cyrus::ldap_bind_pw,
+    cyrus_sieve_bind            => $cyrus::cyrus_sieve_bind,
   }
 }
-

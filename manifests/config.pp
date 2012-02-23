@@ -5,6 +5,7 @@ class cyrus::config (
   $authentication_ldap_servers,
   $ldap_bind_dn,
   $ldap_bind_pw,
+  $cyrus_sieve_bind,
 ) {
 
   include cyrus::variables
