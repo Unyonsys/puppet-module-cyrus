@@ -262,7 +262,7 @@ sharedprefix: share
 
 # support for lookup of mailbox name from LDAP server
 ldap_uri:               <% authentication_ldap_servers.each do |ldap_server| -%><%= ldap_server -%>, <% end %>
-ldap_base:              dc=root
+ldap_base:              <%= ldap_base %>
 ldap_bind_dn:           <%= ldap_bind_dn %>
 ldap_password:          <%= ldap_bind_pw %>
 ldap_time_limit:        15

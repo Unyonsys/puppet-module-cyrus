@@ -3,6 +3,7 @@ class cyrus::config (
   $managed_mail_domains,
   $altnamespace,
   $authentication_ldap_servers,
+  $ldap_base,
   $ldap_bind_dn,
   $ldap_bind_pw,
   $cyrus_sieve_bind,
